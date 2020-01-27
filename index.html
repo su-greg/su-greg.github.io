@@ -1,6 +1,7 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
+
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="theme-color" content="#222">
@@ -10,93 +11,152 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
     <title>su-Greg</title>
+
+    <!-- Additional Css -->
     <link rel="stylesheet" type="text/css" href="./assets/stylesheet/full-page-scroll.css">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans">
     <link rel="stylesheet" type="text/css" href="./assets/stylesheet/style.css">
+
 </head>
 <body>
 
     <!-- NavBar -->
-
     <nav class="navbar navbar-expand-sm navbar-dark fixed-top">
         <a class="navbar-brand" href="https://github.com/su-greg">su-Greg</a>
+        <!-- Mobile Button -->
         <button id="mobileButton" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-            home <span class="navbar-toggler-icon"></span>
-        </button>
+            home <span class="navbar-toggler-icon"></span> </button>
+        <!-- Nav Buttons -->
         <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#0">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#1">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#2">Coding</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#3">Qualifications</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#4">Contact Me</a>
-                </li>
+                <li class="nav-item"> <a class="nav-link" href="#0">About</a>          </li>
+                <li class="nav-item"> <a class="nav-link" href="#1">Projects</a>       </li>
+                <li class="nav-item"> <a class="nav-link" href="#2">Coding</a>         </li>
+                <li class="nav-item"> <a class="nav-link" href="#3">Qualifications</a> </li>
+                <li class="nav-item"> <a class="nav-link" href="#4">Contact Me</a>     </li>
             </ul>
-            <span class="navbar-text">
-                Greg Barnes-Tee
-            </span>
+            <span class="navbar-text"> Greg Barnes-Tee </span>
         </div>
     </nav>
 
+
+    <!-- Scoll container -->
     <div id="main" class="scroll-container">
 
+        <!-- Page One -->
         <section class="section1">
             <div class="cover-container vcenter">
                 <h1 class="cover-heading">Hey there!</h1>
                 <p class="lead">I'm Greg and you seem to have arrived at my online portfolio, which is pretty cool because that means I remembered to send you the link. Feel free to have a look around and see what I get up to.</p>
-                <p class="lead">
-                    <a href="#1" class="btn btn-lg btn-secondary">Lets go!</a>
-                </p>
+                <p class="lead"> <a href="#1" class="btn btn-lg btn-secondary">Lets go!</a> </p>
             </div>
         </section>
 
+
+        <!-- Page Two -->
         <section class="section2">
             <!-- Carousel -->
             <div id="home" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
                 <ul class="carousel-indicators">
                     <li data-target="#demo" data-slide-to="0" class="active"></li>
                     <li data-target="#demo" data-slide-to="1"></li>
                     <li data-target="#demo" data-slide-to="2"></li>
                 </ul>
                 <div class="carousel-inner">
+                    <!-- Slide One -->
                     <div class="carousel-item active" style="background-image: url(http://watsonbatty.com/wp-content/uploads/2016/02/STEM-HiRes-24.jpg);background-size: auto 100%; background-position: center;">
                         <div class="carousel-caption">
                             <h1>EES 2020</h1>
-                            <h5>Working with Network Rail at Sheffield Hallam.</h5>
-                        </div>
+                            <h5>Working with Network Rail at Sheffield Hallam.</h5> </div>
                     </div>
+                    <!-- Slide Two -->
                     <div class="carousel-item" style="background-image: url(./assets/images/Screenshot.png);background-size: auto 100%; background-position: center;">
                         <div class="carousel-caption">
                             <h1>WhatsApp Analyser</h1>
-                            <h5>Live version can be found on my <a href="https://github.com/su-greg/WhatsApp-Analyser">github</a>!</h5>
-                        </div>
+                            <h5>Live version can be found on my <a class="link" href="https://github.com/su-greg/WhatsApp-Analyser">github</a>!</h5> </div>
                     </div>
+                    <!-- Slide Three -->
                     <div class="carousel-item" style="background-image: url(https://www.w3schools.com/bootstrap4/ny.jpg);background-size: auto 100%; background-position: center;">
                         <div class="carousel-caption">
                             <h3>Another Example</h3>
-                            <h5>Avec description</h5>
-                        </div>
+                            <h5>Avec description</h5> </div>
                     </div>
                 </div>
+                <!-- Carousel Controls -->
                 <a class="carousel-control-prev" href="#home" data-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
-                </a>
+                    <span class="carousel-control-prev-icon"></span> </a>
                 <a class="carousel-control-next" href="#home" data-slide="next">
-                    <span class="carousel-control-next-icon"></span>
-                </a>
+                    <span class="carousel-control-next-icon"></span> </a>
             </div>
         </section>
 
+        <!-- Page Three -->
         <section class="section3">
+            <div class="vcenter" id="accord">
+
+                <div class="btn-group neubtn" role="group" aria-label="Basic example">
+                    <button type="button" data-toggle="collapse" data-target="#web" aria-expanded="false" class="btn link">Web Dev</button>
+                    <button type="button" data-toggle="collapse" data-target="#program" aria-expanded="false" class="btn link">Coding</button>
+                    <button type="button" data-toggle="collapse" data-target="#timeline" aria-expanded="false" class="btn link">Time Line</button>
+                </div>
+
+                <!-- Web Dev page-->
+                <div class="collapse" id="web" data-parent="#accord">
+                    <div class="content">
+                        <h3>Web Development</h3>
+                        <p>Most of my coding experience is in web dev through the following languages/libraries.</p>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Front End</th>
+                                    <th>Back End</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>HTML 5</td>
+                                    <td>NodeJs</td>
+                                </tr>
+                                <tr>
+                                    <td>CSS 3</td>
+                                    <td>Express</td>
+                                </tr>
+                                <tr>
+                                    <td>Bootstrap 4</td>
+                                    <td>EJS</td>
+                                </tr>
+                                <tr>
+                                    <td>Javascript</td>
+                                    <td>My SQL</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>You can find most of my Web-Based projects over on my <a href="https://github.com/su-greg" class="link">github</a>!</p>
+                    </div>
+                </div>
+
+                <!-- Programming -->
+                <div class="collapse" id="program" data-parent="#accord">
+                    <div class="content">
+                        <h3>Coding</h3>
+                        <p>In terms of coding languages, I am most familiar with JavaScript closely followed by C#.</p>
+                        <p>I originally learned to code in Python, however I found the visual potential provided by the likes of Windows Form Apps and HTML to be much more attractive, hence JS and C# being my goto's whenever I start a new project.</p>
+                        <p>I enjoy tackling new challenges and I strive to create the most efficient and inventive solutions possible. Many of my prior projects can be found over on my <a href="https://github.com/su-greg" class="link">github</a>!</p>
+                    </div>
+                </div>
+
+                <!-- Road Map -->
+                <div class="collapse" id="timeline" data-parent="#accord">
+                    <div class="content">
+                        <h3>Time Line</h3>
+                        <p>My first experience in the world of programming was through <a href="https://scratch.mit.edu/" class="link">Scratch</a> back in year 5 of primary school.</p>
+                        <p>But my first time <i>actually</i> typing out "hello, world" was in year 7 when I was introduced to <a href="https://www.python.org/" class="link">Python</a> and some basic HTML during ICT class. Expanding on what I had learned in class I taught myself how to code in JavaScript and how to use css to make webpages that looked not so <i>2002</i>.</p>
+                        <p>From there, I went on to further my understanding of web dev and eventually got around to learning C#, which I definitly don't regret.</p>
+                        <!-- I began exploring the inner working of Windows OS which may have gotten me into some trouble at school but it also lead me to the joys of linux, which I most certainly do not regret. -->
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section class="section4">
