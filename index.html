@@ -1,176 +1,148 @@
-﻿<!DOCTYPE html>
-<html>
+﻿<!doctype html>
+<html lang="en">
 <head>
-
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="theme-color" content="#222">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="light.css">
+    <link rel="stylesheet" type="text/css" href="base.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 
     <title>su-Greg</title>
-
-    <!-- Additional Css -->
-    <link rel="stylesheet" type="text/css" href="./assets/stylesheet/full-page-scroll.css">
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans">
-    <link rel="stylesheet" type="text/css" href="./assets/stylesheet/style.css">
-
 </head>
 <body>
 
-    <!-- NavBar -->
-    <nav class="navbar navbar-expand-sm navbar-dark fixed-top">
-        <a class="navbar-brand" href="https://github.com/su-greg">su-Greg</a>
-        <!-- Mobile Button -->
-        <button id="mobileButton" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-            home <span class="navbar-toggler-icon"></span> </button>
-        <!-- Nav Buttons -->
-        <div class="collapse navbar-collapse" id="navbarText">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item"> <a class="nav-link" href="#0">About</a>          </li>
-                <li class="nav-item"> <a class="nav-link" href="#1">Projects</a>       </li>
-                <li class="nav-item"> <a class="nav-link" href="#2">Coding</a>         </li>
-                <li class="nav-item"> <a class="nav-link" href="#3">Qualifications</a> </li>
-                <li class="nav-item"> <a class="nav-link" href="#4">Contact Me</a>     </li>
-            </ul>
-            <span class="navbar-text"> Greg Barnes-Tee </span>
+    <!-- Page Zero -->
+    <div id="pg-0" class="page">
+        <i id="lights" class='far fa-lightbulb'></i>
+        <div class="header">
+            
+            <div class="inner-header flex">
+                <h1>su-Greg</h1>
+            </div>
+
+            <!--Waves Container-->
+            <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                <defs>
+                    <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                </defs>
+                <g class="parallax">
+                    <use xlink:href="#gentle-wave" x="40" y="0" fill="rgba(228, 228, 228, 0.7)" />
+                    <use xlink:href="#gentle-wave" x="40" y="3" fill="rgba(228, 228, 228, 0.5)" />
+                    <use xlink:href="#gentle-wave" x="40" y="5" fill="rgba(228, 228, 228, 0.3)" />
+                    <use xlink:href="#gentle-wave" x="40" y="7" fill="#e4e4e4" />
+                </g>
+            </svg>
         </div>
-    </nav>
 
-
-    <!-- Scoll container -->
-    <div id="main" class="scroll-container">
-
-        <!-- Page One -->
-        <section class="section1">
-            <div class="cover-container vcenter">
-                <h1 class="cover-heading">Hey there!</h1>
-                <p class="lead">I'm Greg and you seem to have arrived at my online portfolio, which is pretty cool because that means I remembered to send you the link. Feel free to have a look around and see what I get up to.</p>
-                <p class="lead"> <a href="#1" class="btn btn-lg btn-secondary">Lets go!</a> </p>
-            </div>
-        </section>
-
-
-        <!-- Page Two -->
-        <section class="section2">
-            <!-- Carousel -->
-            <div id="home" class="carousel slide" data-ride="carousel">
-                <!-- Indicators -->
-                <ul class="carousel-indicators">
-                    <li data-target="#demo" data-slide-to="0" class="active"></li>
-                    <li data-target="#demo" data-slide-to="1"></li>
-                    <li data-target="#demo" data-slide-to="2"></li>
-                </ul>
-                <div class="carousel-inner">
-                    <!-- Slide One -->
-                    <div class="carousel-item active" style="background-image: url(http://watsonbatty.com/wp-content/uploads/2016/02/STEM-HiRes-24.jpg);background-size: auto 100%; background-position: center;">
-                        <div class="carousel-caption">
-                            <h1>EES 2020</h1>
-                            <h5>Working with Network Rail at Sheffield Hallam.</h5> </div>
-                    </div>
-                    <!-- Slide Two -->
-                    <div class="carousel-item" style="background-image: url(./assets/images/Screenshot.png);background-size: auto 100%; background-position: center;">
-                        <div class="carousel-caption">
-                            <h1>WhatsApp Analyser</h1>
-                            <h5>Live version can be found on my <a class="link" href="https://github.com/su-greg/WhatsApp-Analyser">github</a>!</h5> </div>
-                    </div>
-                    <!-- Slide Three -->
-                    <div class="carousel-item" style="background-image: url(https://www.w3schools.com/bootstrap4/ny.jpg);background-size: auto 100%; background-position: center;">
-                        <div class="carousel-caption">
-                            <h3>Another Example</h3>
-                            <h5>Avec description</h5> </div>
-                    </div>
-                </div>
-                <!-- Carousel Controls -->
-                <a class="carousel-control-prev" href="#home" data-slide="prev">
-                    <span class="carousel-control-prev-icon"></span> </a>
-                <a class="carousel-control-next" href="#home" data-slide="next">
-                    <span class="carousel-control-next-icon"></span> </a>
-            </div>
-        </section>
-
-        <!-- Page Three -->
-        <section class="section3">
-            <div class="vcenter" id="accord">
-
-                <div class="btn-group neubtn" role="group" aria-label="Basic example">
-                    <button type="button" data-toggle="collapse" data-target="#web" aria-expanded="false" class="btn link">Web Dev</button>
-                    <button type="button" data-toggle="collapse" data-target="#program" aria-expanded="false" class="btn link">Coding</button>
-                    <button type="button" data-toggle="collapse" data-target="#timeline" aria-expanded="false" class="btn link">Time Line</button>
-                </div>
-
-                <!-- Web Dev page-->
-                <div class="collapse" id="web" data-parent="#accord">
-                    <div class="content">
-                        <h3>Web Development</h3>
-                        <p>Most of my coding experience is in web dev through the following languages/libraries.</p>
-                        <table class="table">
-                            <thead>
-                                <tr>
-                                    <th>Front End</th>
-                                    <th>Back End</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>HTML 5</td>
-                                    <td>NodeJs</td>
-                                </tr>
-                                <tr>
-                                    <td>CSS 3</td>
-                                    <td>Express</td>
-                                </tr>
-                                <tr>
-                                    <td>Bootstrap 4</td>
-                                    <td>EJS</td>
-                                </tr>
-                                <tr>
-                                    <td>Javascript</td>
-                                    <td>My SQL</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <p>You can find most of my Web-Based projects over on my <a href="https://github.com/su-greg" class="link">github</a>!</p>
-                    </div>
-                </div>
-
-                <!-- Programming -->
-                <div class="collapse" id="program" data-parent="#accord">
-                    <div class="content">
-                        <h3>Coding</h3>
-                        <p>In terms of coding languages, I am most familiar with JavaScript closely followed by C#.</p>
-                        <p>I originally learned to code in Python, however I found the visual potential provided by the likes of Windows Form Apps and HTML to be much more attractive, hence JS and C# being my goto's whenever I start a new project.</p>
-                        <p>I enjoy tackling new challenges and I strive to create the most efficient and inventive solutions possible. Many of my prior projects can be found over on my <a href="https://github.com/su-greg" class="link">github</a>!</p>
-                    </div>
-                </div>
-
-                <!-- Road Map -->
-                <div class="collapse" id="timeline" data-parent="#accord">
-                    <div class="content">
-                        <h3>Time Line</h3>
-                        <p>My first experience in the world of programming was through <a href="https://scratch.mit.edu/" class="link">Scratch</a> back in year 5 of primary school.</p>
-                        <p>But my first time <i>actually</i> typing out "hello, world" was in year 7 when I was introduced to <a href="https://www.python.org/" class="link">Python</a> and some basic HTML during ICT class. Expanding on what I had learned in class I taught myself how to code in JavaScript and how to use css to make webpages that looked not so <i>2002</i>.</p>
-                        <p>From there, I went on to further my understanding of web dev and eventually got around to learning C#, which I definitly don't regret.</p>
-                        <!--ex. I began exploring the inner working of Windows OS which may have gotten me into some trouble at school but it also lead me to the joys of linux, which I most certainly do not regret. -->
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section4">
-        </section>
-
-        <section class="section5">
-        </section>
+        <div class="content flex">
+            <i class='fas fa-chevron-down' ><p>scroll</p></i>
+            
+        </div>
     </div>
 
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- Page One -->
+    <div id="pg-1" class="page fall">
+        <div class="header back flex">
+            <div class="neu-box">
+                <h1>About</h1>
+                <p> Hey, welcome to my portfolio!
+                    I am currently a student at York College studying A levels in Computer Science, Maths, Physics and Chemistry. 
+                    I hope that this portfolio provides insight into my character, programming background, analytical skills, and accomplishments.</p>
+            </div>
+        </div>
+        <div class="content flex">
+            <<i><p>About</p></i>>
+        </div>
+    </div>
+
+    <!-- Page Two -->
+    <div id="pg-2" class="page fall">
+        <div class="header back flex">
+            <div id="carousel-left" class="carousel-indicator" style="left: 0;"><i class='fas fa-chevron-left'></i></div>
+
+            <div class="carousel flex">
+
+
+                <div class="carousel-item carousel-0 left">
+                    <div class="cont"><h1>Certificates</h1><p>
+
+                    </p></div>
+                </div>
+
+
+                <div class="flex carousel-item carousel-1">
+                    <div class="cont"><h1>Web Dev</h1><p>
+                        Most of my coding experience is in web development, both back and front end. I have plenty of experience in the following areas:<br>
+                        HTML 5, CSS 3, Javascript, NodeJs, Express, EJS, My SQL and Bootstrap 4.<br>
+                        You can find most of my Web-Based projects over on my github!
+                    </p></div>
+                </div>
+
+                <div class="carousel-item carousel-2 right">
+                    <div class="cont"><h1>Programming</h1><p>
+                        As far as coding languages go, I am most familiar with JavaScript closely followed by C#.
+                        I originally learned to code in Python, however I found the visual potential provided by the likes of Windows Form Apps and HTML to be much more attractive, 
+                        hence JS and C# being my goto's whenever I start a new project.
+                        I enjoy tackling new challenges and I strive to create the most efficient and inventive solutions possible. 
+                    </p></div>
+                </div>
+
+
+            </div>
+
+            <div id="carousel-right" class="carousel-indicator" style="right: 0;"><i class='fas fa-chevron-right'></i></div>
+        </div>
+        
+        <div class="content flex">
+            <<i><p>Coding</p></i>>
+        </div>
+    </div>
+
+    <div id="pg-3" class="page fall">
+        <div class="header flex">
+            
+            <div class="grid">
+                <div class="card" style="background-image: url('Screenshot.png');">
+                    <div class="image"></div>
+                    <div class="container"> 
+                        <h4><b>WhatsApp Analyser</b></h4>
+                        <p>A completely client-sided WhatsApp chat analyser for both Android and iOS exported chat files.</p><br>
+                        <a href="https://su-greg.github.io/WhatsApp-Analyser/"><i class='far fa-eye' ></i></a>
+                        <a href="https://github.com/su-greg/WhatsApp-Analyser"><i class='fas fa-code' > </i></a>
+                    </div>
+                </div>
+                <div class="card" style="background-image: url('https://i.ytimg.com/vi/dr-RRWf8E3g/maxresdefault.jpg');">
+                    <div class="image"></div>
+                    <div class="container"> 
+                        <h4><b>Sort Visualiser</b></h4>
+                        <p>A completely client-sided visualiser for an assortment of common sorting algorithms. Sort arrays of from 20 to 180 elements at any speed.</p><br>
+                        <a href="https://su-greg.github.io/Sorting-Visualiser/"><i class='far fa-eye' ></i></a>
+                        <a href="https://github.com/su-greg/Sorting-Visualiser"><i class='fas fa-code' > </i></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image"></div>
+                    <div class="container"> 
+                        <h4><b>JSquate</b></h4>
+                        <p>A Javascript library for converting equation markup into nicely formated html</p><br>
+                        <a href="https://su-greg.github.io/JSquate/"><i class='far fa-eye' ></i></a>
+                        <a href="https://github.com/su-greg/JSquate"><i class='fas fa-code' > </i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="heading"><h1>Projects</h1></div>
+        </div>
+
+        <div class="content flex">
+            <<i><p>Projects</p></i>>
+        </div>
+    </div>
+
+
+
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script src="./assets/javascript/full-page-scroll.js"></script>
-    <script src="./assets/javascript/script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
