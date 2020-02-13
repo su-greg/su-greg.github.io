@@ -69,3 +69,7 @@ p, i {
     background-color: rgba(228, 228, 228, 0.8);
   }
 }
+
+#lights:hover {
+  color: gray;
+}

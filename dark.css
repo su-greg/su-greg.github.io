@@ -5,7 +5,7 @@ h4 {
   color: #343941;
 }
 p, i {
-  color: #343941;
+  color: #e4e4e4;
 }
 #lights {
   color: #e4e4e4;
@@ -15,10 +15,11 @@ p, i {
   color: #e4e4e4;
 }
 .back {
-  background: #e4e4e4;
+  background: #262a30;
 }
 .content {
-  background-color: #e4e4e4;
+  background-color: #262a30;
+  color: #a4a4a4;
 }
 
 /* Page One Content */
@@ -31,41 +32,46 @@ p, i {
   color: white; 
 }
 .neu-box.focus {
-  box-shadow:  26px 26px 0px #262a30, 
+  box-shadow:  26px 26px 0px #22262c, 
              -26px -26px 0px #424852;
 }
 
 
 /* Page Two Content*/
 .carousel-item .cont {
-  background: #d8d8d8;
-  box-shadow:  20px 20px 0px #b8b8b8, 
-             -20px -20px 0px #efefef;
+  background: #343941;
+  box-shadow:  20px 20px 0px #22262c, 
+             -20px -20px 0px #424852;
 }
-.carousel-item .cont h1 { color: #262a30; }
+.carousel-item .cont h1 { color: #e4e4e4; }
 .carousel-item.left {
-  box-shadow:  60px 20px 2px #b8b8b8, 
-  -60px -20px 0px #f8f8f8;
+  box-shadow:  60px 20px 2px #22262c, 
+  -60px -20px 0px #424852;
 }
 .carousel-item.right {
-  box-shadow:  60px 20px 2px #b8b8b8, 
-  -60px -20px 0px #f8f8f8;
+  box-shadow:  60px 20px 2px #22262c, 
+  -60px -20px 0px #424852;
 }
 
 /* Page Three Content */
 .grid .card {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  background-color: rgba(228, 228, 228, 0.8);
+  background-color: rgba(38, 42, 48, 0.8);
 }
 .card .image {
   background-color: transparent;
 }
 .card .container {
-  background-color: rgba(228, 228, 228, 0.9);
+  background-color: rgba(38, 42, 48, 0.9);
 }
+.card .container h4 { color: #e4e4e4; }
 
 @media only screen and (max-width: 600px) {
   .card .container {
-    background-color: rgba(228, 228, 228, 0.8);
+    background-color: rgba(38, 42, 48, 0.8);
   }
+}
+
+#lights:hover {
+  color: yellow;
 }

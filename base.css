@@ -53,6 +53,10 @@ p, i {
 #lights:hover {
   font-size: 2.2rem;
   padding: 0.9rem;
+  transform: rotate(20deg);
+}
+#lights:c {
+
 }
 .page {
   position: absolute;

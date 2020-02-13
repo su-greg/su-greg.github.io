@@ -9,14 +9,16 @@ $(document).ready(function() {
             $(".parallax use").each(function() {
                 $(this).attr("fill", `rgba(255,255,255,0.${Math.floor((Math.random() * 6) + 4)})`); // Change wave colors
             });
+            $(".parallax .solid-wave").attr("fill", "#e4e4e4");
             $('link[href="dark.css"]').attr('href','light.css'); // Swap css file
             dark = false;
 
         } else {        // Switch to dark theme
 
             $(".parallax use").each(function() {
-                $(this).attr("fill", `rgba(102, 101, 221,0.${Math.floor((Math.random() * 6) + 4)})`); // Change wave colors
+                $(this).attr("fill", `rgba(38, 42, 48,0.${Math.floor((Math.random() * 6) + 4)})`); // Change wave colors
             });
+            $(".parallax .solid-wave").attr("fill", "#262a30");
             $('link[href="light.css"]').attr('href','dark.css'); // Swap css file
             dark = true;
 
