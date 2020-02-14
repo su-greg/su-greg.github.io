@@ -63,6 +63,7 @@ p, i {
 .card .container {
   background-color: rgba(228, 228, 228, 0.9);
 }
+.card .container h4 { color: #22262c; }
 
 @media only screen and (max-width: 600px) {
   .card .container {
@@ -71,5 +72,5 @@ p, i {
 }
 
 #lights:hover {
-  color: gray;
+  color: yellow;
 }
