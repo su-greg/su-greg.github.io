@@ -1,10 +1,11 @@
+@import url(//fonts.googleapis.com/css?family=Lato:300:400);
 * {
   margin: 0;
   padding: 0;
   overflow: hidden;
 }
 body {
-  background: url('/bg.png') no-repeat center center fixed;
+  background: url('bg.png') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -19,6 +20,9 @@ body {
     height: 100vh;
     transition: all .6s;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .page.fall {
