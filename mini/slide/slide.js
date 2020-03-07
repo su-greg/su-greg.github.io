@@ -1,11 +1,14 @@
 var pages = document.getElementsByClassName("page");
 var page = 1;
-var slideable = true;
+var slideable = false;
+var hash = false;
 
-function initSlide(main, slide) {
+function initSlide(main, slide, hashboo) {
     slideable = slide;
+    hash = hashboo;
     for (i=1;i <= pages.length;i++) {
         var element = document.getElementsByClassName(`pg${i}`)[0];
+        element.setAttribute("name", `pg${i}`);
         if ( !element.className.includes(main) ) {
             element.classList.add("fall");
         }
@@ -16,6 +19,7 @@ function initSlide(main, slide) {
 /* Page switching function */
 function slidePage(page) { // page slide function ( page to slide to )
     if (slideable) {
+        if( hash ) document.location.hash = `pg${page}`;
         for (i=1;i <= pages.length;i++) {
             var element = document.getElementsByClassName(`pg${i}`)[0]
 
@@ -70,5 +74,10 @@ function slidePage(page) { // page slide function ( page to slide to )
         var c = e.keyCode;
         if      (/87|104|38/.test(c) && page != 1 )           { page--; slidePage(page); }
         else if (/83|98|40/.test(c)  && page < pages.length)  { page++; slidePage(page); }
+    });
+
+    // HashChange listener
+    window.addEventListener("hashchange", function (e) {
+        if (hash) slidePage(window.location.hash[3]);
     });
 }
