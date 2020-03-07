@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+body {
+  background: url('/bg.png') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.page {
+    position: absolute;
+    top: 0;
+    bottom: 100vh;
+    width: 100%;
+    height: 100vh;
+    transition: all .6s;
+    overflow: hidden;
+}
+
+.page.fall {
+    bottom: -100vh;
+    top: +100vh;
+}
+
+.page.rise {
+    bottom: +100vh;
+    top: -100vh;
+}
