@@ -8,7 +8,7 @@ $("#form").submit(function(e) {
 $(window).on('hashchange', () => {
 
     const appid = window.location.hash.replace("#", "");                                // Change the hash to the entered appid
-    const api = "https://cors-anywhere.herokuapp.com/https://api.steampowered.com/";    // Cors work around for steam's web api
+    const api = "https://api.steampowered.com/";    // Cors work around for steam's web api
     const steam = "https://store.steampowered.com/app/";    // Cors work around for steam store
 
     if (!appid) {       // If the appid is blank ...
@@ -67,7 +67,7 @@ $(window).on('hashchange', () => {
             }).fail( () => { failed++;displayStats($) });
 
             // Request steam store page ( Web Scraping )
-            $.get( (steam + appid + "#app_reviews_hash") , function(data) {
+            $.get( (steam + appid) , function(data) {
 
                 stats.reviews = data.split('<span class="game_review_summary positive" data-tooltip-html="').pop().split('"')[0];       // Scrape reviews
                 stats.devs = data.split('<div class="summary column" id="developers_list">').pop().split('</div>')[0];                  // Scrape Developers
