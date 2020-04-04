@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Scripts and Styles -->
+    <link href="styles/style.css" rel="stylesheet" type="text/css" media="all">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <title>SteamStats</title>
+    
+</head>
+<body>
+
+    <main>
+
+        <!-- Inital Search Box -->
+        <div class="container" id="search">
+            <h2>SteamStats</h2>
+            <p>Find stats on steam games through the Steam api</p>
+            <br>
+            <form id="form">
+                <p>App ID</p>
+                <input class="input" type="text" id="appid" value="730" required/>
+                <input type="submit" value="Find" />
+            </form>
+            <a href="https://github.com/su-greg">&#169; su-Greg - Github</a>
+        </div>
+
+        <!-- Loading Animation -->
+        <div id=loader>
+            <div class="loader"></div>
+        </div>
+        
+        <!-- Display Results -->
+        <div class="container" id="results">
+            <h2 id="title"></h2>
+            <p id="description"></p>
+            
+        </div>
+
+    </main>
+
+    <!-- Handler Script -->
+    <script type="text/javascript" src="scripts/script.js"></script>
+</body>
+</html>
