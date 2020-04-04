@@ -4,6 +4,8 @@ $("#form").submit(function(e) {
     window.location.hash = $("#appid").val();
 });
 
+
+
 // Listen for hash change
 $(window).on('hashchange', () => {
 
@@ -48,6 +50,8 @@ $(window).on('hashchange', () => {
         request.fail( function(e) {
             console.log( "App doesnt exist" );
             document.getElementById("appid").style.animation = "red 0.3s ease 2"
+            document.getElementById("appid").style.borderBottomColor = "red";
+            window.location.hash = "";
         });
 
         // The appid does exist in the Steam API
@@ -66,11 +70,10 @@ $(window).on('hashchange', () => {
                     $("#reviews").html(stats.reviews);
                     $("#release").html("Released "+stats.released);
                     $("#image").attr("src", stats.img);
+                    $("#online").html("In-Game: "+stats.active_players+" players");
                 
                     $("#loader").css("display", "none");     // Hide loading animation
                     $("#results").css("display", "inline-grid");     // Hide loading animation
-                    
-                    console.log(stats);
                 } else if (!!failed) {  // If errors ...
                     console.log( "error!" );
                 }
@@ -85,18 +88,20 @@ $(window).on('hashchange', () => {
 
             // Request steam store page ( Web Scraping )
             $.get( (steam + appid) , function(data) {
+
+                function shave(a, dat ,b) { return dat.split(a).pop().split(b)[0] }
                 
                 if (data.includes("agecheckset")) {
-                    stats.title = data.split('<title>').pop().split(' on Steam</title>')[0];                                                // Scrape Title
+                    stats.title = shave('<title>',data,' on Steam</title>');    // Scrape Title
                     stats.desc = "Content is age restricted! ( I'm working on a workaround for this but it's <em>really</em> tricky! )";
                 } else {
-                    stats.reviews = data.split('style="cursor: pointer;" data-tooltip-html="').pop().split('"')[0];       // Scrape Reviews
-                    stats.devs = data.split('<div class="summary column" id="developers_list">').pop().split('</div>')[0];                  // Scrape Developers
-                    stats.price = data.split('<div class="game_purchase_price price">').pop().split('</div>')[0];                           // Scrape Price
-                    stats.desc = data.split('<div class="game_description_snippet">').pop().split('</div>')[0];                             // Scrape Description
-                    stats.img = data.split('class="game_header_image_full" src="').pop().split('"')[0];                                     // Scrape Image
-                    stats.title = data.split('<div class="apphub_AppName">').pop().split('</div>')[0];                                      // Scrape Title
-                    stats.released = data.split('<div class="date">').pop().split('</div>')[0];                                             // Scrape Release date
+                    stats.devs = shave('<div class="summary column" id="developers_list">',data,'</div>');  // Scrape Developers
+                    stats.reviews = shave('style="cursor: pointer;" data-tooltip-html="',data,'"');         // Scrape Reviews
+                    stats.price = shave('<div class="game_purchase_price price">',data,'</div>');           // Scrape Price
+                    stats.desc = shave('<div class="game_description_snippet">',data,'</div>');             // Scrape Description
+                    stats.img = shave('class="game_header_image_full" src="',data,'"');                     // Scrape Image
+                    stats.title = shave('<div class="apphub_AppName">',data,'</div>');                      // Scrape Title
+                    stats.released = shave('<div class="date">',data,'</div>');                             // Scrape Release date
                 }
 
 
