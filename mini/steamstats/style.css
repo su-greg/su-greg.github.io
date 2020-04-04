@@ -29,9 +29,10 @@ body {
 
 .container {
     width: auto;
+    max-width: 760px;
     height: auto;
     padding: 14px;
-    margin-left: 1em;
+    margin: 0 1em 0 1em;
     background: linear-gradient(135deg, #171a21 , #1b2838 );
     background-attachment: fixed;
 }
@@ -99,6 +100,11 @@ a:hover {
 
 #results {
     display: none;
+    grid-template-columns: 50% 50%;
+}
+
+#results div {
+    width: 100%;
 }
   
 @keyframes spin {
@@ -106,6 +112,19 @@ a:hover {
     100% { transform: rotate(360deg); }
 }
 
-@media only screen and (max-width: 1000px) {
+@keyframes red {
+    25% { border-color: red; }
+    75% { border-color: red; }
+    100% { border-color: #000;}
+}
 
+@media only screen and (max-width: 800px) {
+    #results {
+        display: none;
+        grid-template-columns: 100%;
+    }
+    #frst {
+        width: 100% !important;
+        padding-bottom: 12px;
+    }
 }
