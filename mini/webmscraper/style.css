@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    background-color: #222;
+    color: #fff;
+}
+
+i {
+    font-size: 3em;
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+}
+
+i:hover { color: #ddf}
+
+a {
+    color: #fff;
+    font-size: x-large;
+    text-decoration: none;
+}
+
+a:hover { color: #ccf}
+
+span { margin-bottom: 1em; }
+
+video { height: 100vh; }
+
+#video {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    z-index: -1;
+    top: 0;
+    flex-direction: column;     /* make main axis horizontal (default setting) */
+    justify-content: center; /* center items horizontally, in this case */
+    align-items: center;     /* center items vertically, in this case */
+}
+
+#controls {
+    background-color: #222e;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;     /* make main axis horizontal (default setting) */
+    justify-content: center; /* center items horizontally, in this case */
+    align-items: center;     /* center items vertically, in this case */
+}

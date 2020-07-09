@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="stylesheet" href="style.css">
+    
+    <title>webmScraper</title>
+</head>
+<body>
+    <div id="controls">
+        <span><a id="title"></a></span>
+        <span>
+        <i id="back" class="fas fa-step-backward"></i>
+        <i id="play" class='fas'>&#xf04b;</i>
+        <i id="next" class="fas fa-step-forward"></i>
+        </span>
+        <p id="track"></p>
+    </div>
+    
+    <div id="video">
+        <video onended="playWebm(1)" autoplay>
+            <source id='webm' src="">
+        </video>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
