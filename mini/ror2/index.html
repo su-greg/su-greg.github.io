@@ -129,7 +129,8 @@ pre {
             case 7: return "Rex";
             case 8: return "Loader";
             case 9: return "Acrid";
-            }}(Math.floor((Math.random() * 9) + 1))
+            case 10: return "Captain";
+            }}(Math.floor((Math.random() * 10) + 1))
             } while (out.includes(character));
             out += `Player${i} - ${character}\n`;
         }
